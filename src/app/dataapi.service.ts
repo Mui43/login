@@ -16,4 +16,8 @@ export class DataapiService {
   loginUser(datalog:any){
     return this.http.post('http://127.0.0.1/2-3/Project01/login.php', datalog);
   }
+
+  logoutUser(){
+    return this.http.post('http://127.0.0.1/2-3/Project01/logout.php',{});
+  }
 }
